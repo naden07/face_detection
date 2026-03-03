@@ -14,7 +14,7 @@ while True:
 
     cv2.imshow('img', frame)
     pressed_key = cv2.waitKey(40) & 0xFF
-    if  pressed_key== 40:
+    if  pressed_key == 40:
         break
 
 video_capture.release()
