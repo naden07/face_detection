@@ -11,3 +11,11 @@ while True:
 
     for (x1,y1, w1, h1) in f:
         cv2.rectangle(d_image, (x1, y1), (x1+w1, y1+h1), (255,0,0),5)
+
+    cv2.imshow('img', d_image)
+    h = cv2.waitKey(40) & 0xFF
+    if h == 40:
+        break
+
+video_capture.release()
+cv2.destroyAllWindows()
